@@ -21,8 +21,8 @@
 		<Metadata name="Catalog.Склады.Form.ФормаЭлемента.Form" id="e331226c-a145-4f96-85b9-d72080aa29f9.0" configVersion="229536cd29068f439b17fac09d73842000000000"/>
 		<Metadata name="CommonForm.ФормаКонстант" id="0a1147e1-3cd5-4e4d-be69-eff2d55e9714" configVersion="754dbeec95eee0479f8bee2a2687513700000000"/>
 		<Metadata name="CommonForm.ФормаКонстант.Form" id="0a1147e1-3cd5-4e4d-be69-eff2d55e9714.0" configVersion="2f0d17b265693e47af45f231b9a06fc000000000"/>
-		<Metadata name="CommonModule.ОбщегоНазначения" id="72df4c1a-6d4c-447c-9bb9-0e9eeeb102b5" configVersion="a156700e0e9d8547b2fb887d66a20b8c00000000"/>
-		<Metadata name="CommonModule.ОбщегоНазначения.Module" id="72df4c1a-6d4c-447c-9bb9-0e9eeeb102b5.0" configVersion="de16ea8525851548a556628757d09fd400000000"/>
+		<Metadata name="CommonModule.ОбщегоНазначения" id="72df4c1a-6d4c-447c-9bb9-0e9eeeb102b5" configVersion="e2eb0635f991a14297bb6bc38045e5eb00000000"/>
+		<Metadata name="CommonModule.ОбщегоНазначения.Module" id="72df4c1a-6d4c-447c-9bb9-0e9eeeb102b5.0" configVersion="306d7a42a6833c42940ef18f32cf40ab00000000"/>
 		<Metadata name="CommonModule.ОбщегоНазначенияВызовСервера" id="d589166d-9c2a-4ff7-a070-44028f1bdf0a" configVersion="deea6651aaa28d47a6a1ffbabd0435b700000000"/>
 		<Metadata name="CommonModule.ОбщегоНазначенияВызовСервера.Module" id="d589166d-9c2a-4ff7-a070-44028f1bdf0a.0" configVersion="e89f260b61a0124e96e46be39d5f462200000000"/>
 		<Metadata name="CommonModule.ПроведениеДокументов" id="1b4987fb-93fe-4c73-a0e9-a8fc9f5ee17d" configVersion="3d650c04f8b65b48914e7f889254a62100000000"/>
