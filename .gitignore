@@ -2,3 +2,4 @@ build/
 build/ib
 src/ConfigDumpInfo.xml
 out/
+src/ConfigDumpInfo.xml
