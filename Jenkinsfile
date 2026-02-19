@@ -10,7 +10,8 @@ pipeline
 
     post {
         always {            
-           bat "echo always"
+           allure includeProperties: false, jdk: '', resultPolicy: 'LEAVE_AS_IS', results: [[path: 'C:/repo/jenkins-demo-09/out/syntax-check/allure']]
+           junit 'C:/repo/jenkins-demo-09/out/syntax-check/junit/junit.xml'
         }
 
         failure {
