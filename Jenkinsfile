@@ -31,7 +31,7 @@ pipeline
         // } 
         stage("Build test base") {
             steps {                
-                bat "chcp 65001\n vrunner init-dev --v8version=8.3.23.1912 --dt C:\\jenkins\\template\\dev.dt --db-user Teacher --src C:\\repo\\jenkins-demo-09\\src --ibconnection /FC:\repo\jenkins-demo-09\build\ib"
+                bat "chcp 65001\n vrunner init-dev --v8version=8.3.23.1912 --dt C:\\jenkins\\template\\dev.dt --db-user Teacher --src C:\\repo\\jenkins-demo-09\\src --ibconnection /FC:\\repo\\jenkins-demo-09\\build\\ib"
             }
         }       
         // stage("Syntax check") {
