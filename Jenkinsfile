@@ -1,7 +1,7 @@
 pipeline
 {
     agent {
-        label '1c'
+        label '1C_agent'
     }
 
     environment {
