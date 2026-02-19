@@ -5,7 +5,7 @@ pipeline
     }
 
     environment {
-        envString = 'true'
+        envString = 'world'
     }
 
     post {
@@ -26,7 +26,7 @@ pipeline
     stages {
         stage("First step") {
             steps {                
-                bat "chcp 65001\n echo Hello, + ${envString}"
+                bat "chcp 65001\n echo Hello, ${envString}"
             }
         } 
         // stage("Build test base") {
