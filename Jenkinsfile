@@ -24,16 +24,16 @@ pipeline
     }
 
     stages {
-        stage("First step") {
-            steps {                
-                bat "chcp 65001\n echo Hello, ${envString}"
-            }
-        } 
-        // stage("Build test base") {
+        // stage("First step") {
         //     steps {                
-        //         bat "chcp 65001\n vrunner init-dev --dt C:\\jenkins\\template\\dev.dt --src C:\\repo\\jenkins_repo\\src"
+        //         bat "chcp 65001\n echo Hello, ${envString}"
         //     }
-        // }       
+        // } 
+        stage("Build test base") {
+            steps {                
+                bat "chcp 65001\n vrunner init-dev --v8version=8.3.23.1912 --dt C:\\jenkins\\template\\dev.dt --db-user Teacher --src C:\\repo\\jenkins-demo-09\\src --ibconnection /FC:\repo\jenkins-demo-09\build\ib"
+            }
+        }       
         // stage("Syntax check") {
         //     steps {                
         //         bat "chcp 65001\n vrunner syntax-check"
