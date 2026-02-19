@@ -10,8 +10,8 @@ pipeline
 
     post {
         always {            
-           allure includeProperties: false, jdk: '', resultPolicy: 'LEAVE_AS_IS', results: [[path: 'out/syntax-check/allure'],[path: 'out/smoke/allure']]
-           junit stdioRetention: 'ALL', testResults: 'out/syntax-check/junit/junit.xml'
+           allure includeProperties: false, jdk: '', resultPolicy: 'LEAVE_AS_IS', results: [[path: 'out/syntax-check/allure'], [path: 'out/smoke/allure']]
+           junit allowEmptyResults, testResults: 'out/smoke/junit/*.xml'
         }
 
         failure {
