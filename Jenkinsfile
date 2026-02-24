@@ -30,49 +30,49 @@ pipeline
         //         bat "chcp 65001\n echo Hello, ${envString}"
         //     }
         // } 
-        stage("Build test base") {
-            steps {                
-                bat "chcp 65001\n vrunner init-dev"
-            }
-        }       
-        stage("Syntax check") {
-            steps {                
-                bat "chcp 65001\n vrunner syntax-check"
-            }
-        }
-        stage("Smoke tests") {
-            steps {
-                script {
-                    try {
-                        bat "chcp 65001\n vrunner xunit"
-                    }
-                    catch(Exception Exc) {
-                        currentBuild.result = 'UNSTABLE'
-                    }
-                }                
-            }
-        }
-        stage("Vanessa") {
-            steps {
-                script {
-                    try {
-                        bat "chcp 65001\n vrunner vanessa"
-                    }
-                    catch(Exception Exc) {
-                        currentBuild.result = 'UNSTABLE'
-                    }
-                }                
-            }
-        } 
-        // stage("Sonar") {
+        // stage("Build test base") {
+        //     steps {                
+        //         bat "chcp 65001\n vrunner init-dev"
+        //     }
+        // }       
+        // stage("Syntax check") {
+        //     steps {                
+        //         bat "chcp 65001\n vrunner syntax-check"
+        //     }
+        // }
+        // stage("Smoke tests") {
         //     steps {
         //         script {
-        //             scannerHome = tool 'sonar-scanner'
-        //         }
-        //         withSonarQubeEnv("sonar") {
-        //             bat "chcp 65001\n ${scannerHome}/bin/sonar-scanner -D sonar.login=sqp_ff1f8486e5db41bcca28e81970a89395690440a4"
+        //             try {
+        //                 bat "chcp 65001\n vrunner xunit"
+        //             }
+        //             catch(Exception Exc) {
+        //                 currentBuild.result = 'UNSTABLE'
+        //             }
+        //         }                
+        //     }
+        // }
+        // stage("Vanessa") {
+        //     steps {
+        //         script {
+        //             try {
+        //                 bat "chcp 65001\n vrunner vanessa"
+        //             }
+        //             catch(Exception Exc) {
+        //                 currentBuild.result = 'UNSTABLE'
+        //             }
         //         }                
         //     }
         // } 
+        stage("Sonar") {
+            steps {
+                script {
+                    scannerHome = tool 'sonar-scanner'
+                }
+                withSonarQubeEnv("sonar") {
+                    bat "chcp 65001\n ${scannerHome}/bin/sonar-scanner -D sonar.login=sqp_7f353e00277dd0a90b622a7577d9b19f52f09d63"
+                }                
+            }
+        } 
     }
 }

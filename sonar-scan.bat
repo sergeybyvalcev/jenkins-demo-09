@@ -1,0 +1,1 @@
+sonar-scanner.bat -D"sonar.projectKey=OTUS-DevOps-2025-05-09" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9000" -D"sonar.token=sqp_7f353e00277dd0a90b622a7577d9b19f52f09d63"
