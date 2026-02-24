@@ -70,7 +70,7 @@ pipeline
                     scannerHome = tool 'sonar-scanner'
                 }
                 withSonarQubeEnv("sonar") {
-                    bat "chcp 65001\n ${scannerHome}/bin/sonar-scanner -D sonar.login=sqp_7f353e00277dd0a90b622a7577d9b19f52f09d63"
+                    bat "chcp 65001\n ${scannerHome}/bin/sonar-scanner -D sonar.login=sqa_7ddfbf0c6f049f41084b602f0eb0471b63cebea0"
                 }                
             }
         } 
